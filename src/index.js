@@ -1,13 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import "./App.css";
+import Weather from "./Weather";
+import WeatherIcon from "./WeatherIcon";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Weather defaultCity="Portland" />
+    <WeatherIcon />
+    <footer>
+      <a href="https://github.com/whvtitiz/weather-react.git" rel="noreferrer">
+        Open-source code on GitHub
+      </a>
+      &nbsp;&&nbsp;
+      <a href="https://gleeful-gingersnap-53cb24.netlify.app/" rel="noreferrer">
+        hosted on Netlify
+      </a>
+      &nbsp;coded by Whitney Wiles
+    </footer>
   </React.StrictMode>
 );
 

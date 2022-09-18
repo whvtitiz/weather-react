@@ -1,11 +1,11 @@
 import React from "react";
-import "./Weather.css";
+import "./App.css";
 
 export default function Weather() {
   let weatherData = {
     city: "Portland",
     temperature: 70,
-    date: "Tuesday 2:00pm",
+    date: "Tuesday 3:00pm",
     description: "Sunny",
     imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
     humidity: 50,
@@ -67,3 +67,13 @@ export default function Weather() {
     </div>
   );
 }
+<footer>
+  <a href="https://github.com/whvtitiz/weather-react.git" rel="noreferrer">
+    Open-source code on GitHub
+  </a>
+  and
+  <a href="https://gleeful-gingersnap-53cb24.netlify.app/" rel="noreferrer">
+    hosted on Netify
+  </a>
+  , coded by Whitney Wiles
+</footer>;
