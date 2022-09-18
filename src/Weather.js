@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Weather() {
   let weatherData = {
@@ -13,8 +14,8 @@ export default function Weather() {
   };
 
   return (
-    <div className="Weather">
-      <form className="mb-3">
+    <div className="weatherSearch">
+      <form className="weatherWrapper">
         <div className="row">
           <div className="col-6">
             <input
@@ -43,6 +44,7 @@ export default function Weather() {
       <div className="row">
         <div className="col-4">
           <div className="clearfix weather-temperature">
+            <WeatherIcon />
             <img
               src={weatherData.imgUrl}
               alt={weatherData.description}

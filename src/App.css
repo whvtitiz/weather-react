@@ -22,4 +22,12 @@ li {
 }
 footer {
   font-size: small;
+  text-align: center;
+}
+.weatherSearch {
+  border: 1px solid rgb(199, 195, 195);
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
 }
